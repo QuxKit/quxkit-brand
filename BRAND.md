@@ -12,6 +12,7 @@ labels have been removed; the raster renders are the faithful masters and the
 | `quxkit/` | QuxKit (umbrella) | Blue crystal |
 | `billing-kit/` | @quxkit/billing-kit | Blue |
 | `identity-kit/` | @quxkit/identity-kit | Gold |
+| `mail-kit/` | @quxkit/mail-kit | Ruby |
 | `tenant-kit/` | @quxkit/tenant-kit | Green |
 | `ai-member/` | AI Member / AI Memory | Purple crystal brain |
 

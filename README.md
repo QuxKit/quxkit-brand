@@ -15,6 +15,7 @@ Each product is the same faceted crystal, cut in its own stone.
 | `billing-kit/` | `@quxkit/billing-kit` | Blue |
 | `tenant-kit/` | `@quxkit/tenant-kit` | Green |
 | `identity-kit/` | `@quxkit/identity-kit` | Gold |
+| `mail-kit/` | `@quxkit/mail-kit` | Ruby |
 | `ai-member/` | AI Member | Purple crystal brain |
 | `keystone/` | Keystone | — |
 

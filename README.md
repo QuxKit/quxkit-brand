@@ -17,7 +17,7 @@ Each product is the same faceted crystal, cut in its own stone.
 | `identity-kit/` | `@quxkit/identity-kit` | Gold |
 | `mail-kit/` | `@quxkit/mail-kit` | Ruby |
 | `comm-kit/` | `@quxkit/comm-kit` | Turquoise |
-| `integration-kit/` | Integration-Kit | Amethyst |
+| `integration-kit/` | Integration-Kit | Tanzanite |
 | `ai-member/` | AI Member | Purple crystal brain |
 | `quxkit-crm/` | QuxCRM | Magenta |
 | `keystone/` | Keystone | — |
@@ -36,10 +36,11 @@ Each product folder carries `<name>-icon.png` (the mark on its app-tile),
 and `sizes/` with 32–512px square exports of both the tile and the glyph.
 QuxKit adds 16, 180 and 460 for favicon and org-avatar slots.
 
-Integration-Kit and AI Member are both purple and are meant to be told apart
-by cut, not hue: Integration-Kit is the faceted amethyst gem the other kits
-share, AI Member is a crystal brain. QuxCRM was amethyst until August 2026
-and is now magenta, which is what freed that stone.
+Integration-Kit and AI Member both read purple at a glance and are told apart
+by cut and by bias: Integration-Kit is tanzanite, a faceted gem pulled toward
+the blue facet of its violet-blue crystal, while AI Member is a crystal brain.
+The portal tints Integration-Kit's page from the same stone. QuxCRM was
+amethyst until August 2026 and is now magenta.
 
 Contrast note: the navy-tile QuxKit mark is for light surfaces, the white-tile
 one for dark. The umbrella mark keeps its tile — it is a near-white crystal

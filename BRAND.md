@@ -18,14 +18,21 @@ labels have been removed; the raster renders are the faithful masters and the
 
 ## What's in each product folder
 
-- `*-icon.png` / `*-brain.png` — the cleaned mark on its app-tile (label removed, square)
-- `*-glyph.png` — the **bare crystal on transparent**: tile, drop-shadow and paper
-  all stripped, for the four products (`billing-kit`, `tenant-kit`, `identity-kit`,
-  `ai-member`). Produced by `scripts/isolate-glyphs.py`.
-- `*-icon-alt.png` — a second generated variant, kept as an option
-- `*.svg` — scalable vector trace of the mark
-- `sizes/` — square PNG exports of the tiled icon **and** the glyph
-  (`*-glyph-{512,256,128,64,32}.png`); QuxKit also 16, 180, 460
+Everything published is **transparent** — nothing outside `paper/` carries the
+cream paper or any opaque ground, because these files are hotlinked into READMEs,
+npm pages and org avatars that render on backgrounds we do not control.
+
+- `*-icon.png` / `*-brain.png` — the mark itself: bare crystal on transparent,
+  at the glyph master's native resolution
+- `*-glyph.png` — the same bare crystal on transparent, cut by
+  `scripts/isolate-glyphs.py`; every product has one
+- `*.svg` — scalable vector trace, re-traced from the transparent masters
+  (vtracer 0.6.5, polygon mode); the paper-era traces are archived in `paper/`
+- `sizes/` — square transparent PNG exports, `*-{512,256,128,64,32}.png` and the
+  `*-glyph-` twins (identical content, both names kept so old links keep working);
+  QuxKit also 16, 180, 460
+- `paper/` — the archived photo-style renders (crystal on white tile on cream
+  paper). Reference only. **Never hotlink from here.**
 
 ## Isolating the bare glyphs
 
@@ -36,14 +43,16 @@ paper + gray drop-shadow + white tile in one sweep while the saturated facets wa
 off the interior highlights; the **crystal brain** is itself light and low-saturation,
 so instead `rembg` lifts the whole tile off the paper and a tight near-white flood
 removes just the white tile, stopping at the lavender edge. The QuxKit umbrella mark
-is a near-white crystal with no distinct hue, so it is *not* auto-isolated — it keeps
-its designed app-tile (`quxkit-icon-light/dark`).
+is a near-white crystal with no distinct hue, so it is *not* auto-isolated — instead
+`rembg` lifts its designed app-tile whole off the paper, and `quxkit-icon-light/dark`
+are that tile on transparent (the paper originals are in `quxkit/paper/`).
 
 ## QuxKit extras
 
 - `quxkit-wordmark.png` — mark + wordmark, **no tagline**
 - `quxkit-lockup-crystal.png` / `quxkit-lockup-mono.png` — lockups, tagline cropped
-- `quxkit-icon-light.png` / `quxkit-icon-dark.png` — app-icon on white / navy
+- `quxkit-icon-light.png` / `quxkit-icon-dark.png` — the white / navy app-tile,
+  on transparent (these two keep their tile: the near-white root crystal needs it)
 
 ## Reference & source
 
@@ -56,6 +65,6 @@ its designed app-tile (`quxkit-icon-light/dark`).
 - **GitHub / npm org avatar:** `quxkit/sizes/quxkit-460.png`
 - **Per-package README / npm icon:** each product's `sizes/*-256.png`
 
-Notes: the SVG traces are colour-traces of the renders — scalable and faithful
-in shape, but open them to confirm before using at hero scale. For a perfectly
-crisp production mark you would still redraw from these as a guide.
+Notes: the SVG traces are colour-traces of the transparent masters — scalable
+and faithful in shape, but open them to confirm before using at hero scale. For a
+perfectly crisp production mark you would still redraw from these as a guide.
